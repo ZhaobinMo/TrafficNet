@@ -1,0 +1,29 @@
+CREATE PROCEDURE `createPesdestrianCrossing` ()
+BEGIN
+	Declare D,T smallint;
+	Declare B,E int;
+
+	DECLARE row_not_found boolean default FALSE;
+
+	DECLARE cur1 CURSOR FOR 
+		SELECT 	device,trip,beginTime,endTime            
+		FROM 	`das1`.`PedestrianCrossingEventCandidate`
+		ORDER BY device,trip,time;
+		
+		
+	DECLARE CONTINUE HANDLER FOR NOT FOUND SET row_not_found = TRUE;
+
+	OPEN cur1;
+
+    
+    WHILE row_not_found = FALSE DO
+        
+        FETCH cur1 INTO D,Tr,Ob,Tbegin,Tend,Tbefore,Tafter;
+        
+	End while;
+    close cur1;
+
+
+
+
+END

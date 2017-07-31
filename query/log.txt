@@ -1,0 +1,53 @@
+
+Done:
+
+
+
+
+
+
+Scenarios:
+
+lanechange 
+following
+cut-in
+
+
+todo 
+
+1 add primary key
+2 check event number and seq number
+3 check the continuty of the number
+ 
+pedestrian
+
+################
+###Code summary:###
+################
+
+three basic tables:
+
+	1.DataLane
+	2.DataFrontTargets
+	3.DataWsu
+
+
+
+independent:
+
+	1.cyclist
+	2.pedestrian
+	3.laneChange
+
+dependent
+	1.carFollowing
+	2.freeFlow
+	3.cut-in
+	
+	
+	Order:
+	1.check redundancy and primary key of the four marjor tables
+	2.
+
+	
+	

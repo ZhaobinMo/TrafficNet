@@ -1,0 +1,36 @@
+Drop table if exists DataWsuNNode;
+Create table DataWsuNNode
+(
+Device	smallint,
+Trip	smallint,
+Time	int,
+GpsValidWsu	tinyint,
+GpsTimeWsu	bigint,
+LatitudeWsu	double,
+LongitudeWsu	double,
+AltitudeWsu	double,
+GpsHeadingWsu	double,
+GpsSpeedWsu	double,
+HdopWsu	double,
+PdopWsu	double,
+FixQualityWsu	tinyint,
+GpsCoastingWsu	tinyint,
+ValidCanWsu	tinyint,
+YawRateWsu	double,
+SpeedWsu	double,
+TurnSngRWsu	tinyint,
+TurnSngLWsu	tinyint,
+BrakeAbsTcsWsu	tinyint,
+AxWsu	double,
+PrndlWsu	tinyint,
+VsaActiveWsu	tinyint,
+HeadlampWsu	tinyint,
+WiperWsu	tinyint,
+ThrottleWsu	double,
+SteerWsu	double,
+con	int,
+NearestNode int,
+NNodeLat double,
+NNodeLon double
+);
+call WsuWithNearestNode();

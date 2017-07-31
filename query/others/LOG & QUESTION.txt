@@ -1,0 +1,33 @@
+Scenarios
+
+Free flow
+Lane departure
+Lane change
+Left turn
+Pedestrain crossing
+Car following
+Intersection
+cyclist
+Cut in
+
+
+
+
+
+
+1. table discontinuous
+
+
+
+
+
+Schedule
+
+1. Continuous range
+ make tables recording the continuous range of Wsu, FrontTargets and Lane
+
+2. Nearest intersection for Wsu 
+ Kdtree in matlab
+
+3. 
+
